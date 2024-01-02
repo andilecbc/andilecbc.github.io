@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>PIN Test</title>
+        <script src="https://cdn.jsdelivr.net/npm/node-forge@1.0.0/dist/forge.min.js"></script>
+    </head>
+    <body>
+        <div style="width: 100%; margin-bottom: 30px;">PIN Encryptor!!!</div>
+        <div style="width: 100%; margin-bottom: 30px;">
+            <input type="text" id="pin">
+            <input type="button" id="submit" value="Submit" onclick="submit()">
+        </div>
+        <div style="width: 100%; margin-bottom: 30px; display: none;" id="result-text">Result:</div>
+
+        <pre id="response"></pre>
+
+    <script src="pin-encryptor.js"></script>
+    <script src="main.js"></script>
+    </body>
+</html>
