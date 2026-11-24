@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Andile Sibisi – CV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1b2330;
+    --muted: #5b6676;
+    --line: #e3e7ee;
+    --accent: #0a6ed1;      /* SAP Fiori blue */
+    --accent-soft: #eaf3fc;
+    --side: #f5f7fa;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif; color: var(--ink);
+         font-size: 9.6pt; line-height: 1.45; background: #fff; }
+  @page { size: A4; margin: 0; }
+  .page { width: 210mm; height: 297mm; overflow: hidden; margin: 0 auto; display: grid; grid-template-columns: 64mm 1fr; }
+  .page + .page { page-break-before: always; }
+  @media screen { body { background: #dfe3e9; padding: 16px 0; } .page { background: #fff; margin-bottom: 16px; box-shadow: 0 2px 12px rgba(0,0,0,.12); } }
+  @media screen and (max-width: 820px) { .page { width: 100%; grid-template-columns: 1fr; height: auto; } body { padding: 0; } }
+
+  aside { background: var(--side); padding: 14mm 7mm 10mm 9mm; border-right: 1px solid var(--line); }
+  main  { padding: 14mm 11mm 10mm 9mm; }
+
+  .name { font-size: 22pt; font-weight: 700; letter-spacing: -.02em; line-height: 1.1; }
+  .title { color: var(--accent); font-weight: 600; font-size: 10.5pt; margin-top: 4px; }
+  .tagline { color: var(--muted); margin-top: 2px; font-size: 9pt; }
+
+  h2 { font-size: 8.4pt; text-transform: uppercase; letter-spacing: .12em; color: var(--accent);
+       font-weight: 700; margin: 16px 0 7px; padding-bottom: 4px; border-bottom: 1.5px solid var(--accent); }
+  aside h2 { margin-top: 14px; }
+  aside h2:first-of-type { margin-top: 16px; }
+
+  .contact li { list-style: none; margin-bottom: 5px; word-break: break-word; }
+  .contact .k { display: block; font-size: 7.6pt; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
+  a { color: inherit; text-decoration: none; }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 4px; }
+  .chip { background: #fff; border: 1px solid var(--line); border-radius: 4px; padding: 2px 6px; font-size: 8.3pt; }
+  .chip.strong { background: var(--accent-soft); border-color: #c4dcf4; color: #084e94; font-weight: 600; }
+  .skill-group { margin-bottom: 9px; }
+  .skill-group .label { font-weight: 600; font-size: 8.6pt; margin-bottom: 4px; }
+
+  .edu li, .plain li { list-style: none; margin-bottom: 7px; }
+  .edu .what { font-weight: 600; }
+  .edu .where { color: var(--muted); font-size: 8.6pt; }
+
+  .summary { font-size: 9.8pt; }
+  .highlights { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin-top: 10px; }
+  .hl { background: var(--accent-soft); border-radius: 6px; padding: 7px 8px; }
+  .hl b { display: block; font-size: 13pt; color: #084e94; line-height: 1.1; }
+  .hl span { font-size: 8pt; color: var(--muted); }
+
+  .role { margin-bottom: 11px; break-inside: avoid; }
+  .role-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+  .role-title { font-weight: 600; font-size: 10pt; }
+  .role-org { color: var(--accent); font-weight: 600; }
+  .dates { color: var(--muted); font-size: 8.4pt; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .role ul { margin: 3px 0 0 14px; }
+  .role li { margin-bottom: 2px; }
+  .stack { color: var(--muted); font-size: 8.3pt; margin-top: 2px; }
+  .stack b { color: var(--ink); font-weight: 600; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<section class="page">
+  <aside>
+    <div class="name">Andile<br>Sibisi</div>
+    <div class="title">Senior SAP ABAP &amp; Fiori Consultant</div>
+    <div class="tagline">S/4HANA · BTP · RAP · SAPUI5</div>
+
+    <h2>Contact</h2>
+    <ul class="contact">
+      <li><span class="k">Email</span><a href="mailto:andilecbc@gmail.com">andilecbc@gmail.com</a></li>
+      <li><span class="k">Phone (ZA)</span>+27 83 883 5204</li>
+      <li><span class="k">Phone (DE)</span>+49 176 27874688</li>
+      <li><span class="k">LinkedIn</span><a href="https://za.linkedin.com/pub/andile-sibisi/46/766/5b9">linkedin.com/pub/andile-sibisi</a></li>
+      <li><span class="k">Availability</span>Remote · Contract or permanent · EU / UK time zones</li>
+    </ul>
+
+    <h2>Core skills</h2>
+    <div class="skill-group">
+      <div class="label">SAP development</div>
+      <div class="chips">
+        <span class="chip strong">ABAP OO</span><span class="chip strong">RAP</span><span class="chip strong">SAPUI5 / Fiori</span>
+        <span class="chip strong">S/4HANA</span><span class="chip strong">SAP BTP</span>
+        <span class="chip">OData / Gateway</span><span class="chip">Web Dynpro &amp; FPM</span>
+        <span class="chip">Workflow</span><span class="chip">Adobe Forms</span><span class="chip">Neptune DXP</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="label">Functional modules</div>
+      <div class="chips">
+        <span class="chip strong">EWM</span><span class="chip">Retail</span><span class="chip">MM</span>
+        <span class="chip">FI/CO</span><span class="chip">HR / HCM</span><span class="chip">PSRM</span><span class="chip">GRC</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="label">Beyond SAP</div>
+      <div class="chips">
+        <span class="chip">Java</span><span class="chip">JavaScript</span><span class="chip">REST APIs</span>
+        <span class="chip">Mobile / scanner apps</span><span class="chip">Salesforce integration</span><span class="chip">Embedded</span>
+      </div>
+    </div>
+
+  </aside>
+
+  <main>
+    <h2 style="margin-top:0">Profile</h2>
+    <p class="summary">
+      Full-stack SAP engineer with <b>12+ years</b> delivering ABAP and Fiori solutions on S/4HANA, from
+      warehouse (EWM) roll-outs at BMW to public-sector HR and revenue systems at the City of Cape Town.
+      I own the whole stack – RAP and OData back-ends, SAPUI5/Fiori front-ends and cloud extensions on SAP BTP –
+      and I take a complex idea through design, build and support to a product people use every day.
+      Since 2016 I have worked as an independent contractor through my own company, Oman Software.
+    </p>
+    <div class="highlights">
+      <div class="hl"><b>12+ yrs</b><span>SAP ABAP &amp; UI5 delivery</span></div>
+      <div class="hl"><b>10+</b><span>enterprise clients incl. BMW, Standard Bank, Dis-Chem</span></div>
+      <div class="hl"><b>7</b><span>SAP modules: EWM, Retail, MM, FI/CO, HR, PSRM, GRC</span></div>
+    </div>
+
+    <h2>Experience</h2>
+
+    <div class="role">
+      <div class="role-head"><div class="role-title">Senior Independent Contractor – SAP ABAP | Fiori | S/4HANA</div><div class="dates">Dec 2016 – Present</div></div>
+      <div class="role-org">Oman Software (own consultancy)</div>
+      <p class="muted" style="margin-top:2px">Engagements below were delivered through Oman Software.</p>
+    </div>
+
+    <div class="role">
+      <div class="role-head"><div class="role-title"><span class="role-org">BMW South Africa</span> · Senior ABAP &amp; Fiori Consultant</div><div class="dates">Sep 2020 – Present</div></div>
+      <ul><li>Build and support EWM on S/4HANA for manual warehouse implementations, across ABAP back-end and Fiori apps.</li></ul>
+      <div class="stack"><b>Stack:</b> S/4HANA EWM · ABAP OO · RAP · SAPUI5/Fiori · OData</div>
+    </div>
+
+    <div class="role">
+      <div class="role-head"><div class="role-title"><span class="role-org">City of Cape Town</span> · Full-Stack SAP Consultant</div><div class="dates">Mar 2021 – May 2023</div></div>
+      <ul><li>Delivered ABAP, Gateway and Fiori development on the HR/HCM and PSRM (Public Sector Revenue Management) projects.</li></ul>
+      <div class="stack"><b>Stack:</b> ABAP · SAP Gateway · SAPUI5/Fiori · HCM · PSRM</div>
+    </div>
+
+    <div class="role">
+      <div class="role-head"><div class="role-title"><span class="role-org">Dimension Data</span> · SAP Fiori Consultant</div><div class="dates">Aug 2020 – Dec 2020</div></div>
+      <ul><li>Fiori development on the Aspen Pharmacare S/4HANA implementation.</li></ul>
+    </div>
+
+    <div class="role">
+      <div class="role-head"><div class="role-title"><span class="role-org">Dis-Chem · Massmart · Barloworld</span> · ABAP &amp; Fiori Consultant</div><div class="dates">Sep 2019 – Aug 2020</div></div>
+      <ul>
+        <li>Dis-Chem Pharmacies: built custom Fiori apps and ABAP enhancements; supported SAP Retail and FI.</li>
+        <li>Massmart Group and Barloworld Equipment: ad-hoc ABAP support on SAP Retail and SAP FI projects.</li>
+      </ul>
+    </div>
+
+    <div class="role">
+      <div class="role-head"><div class="role-title"><span class="role-org">UCS Solutions / BCX</span> · Senior SAP Fiori/ABAP Consultant</div><div class="dates">Mar 2017 – Aug 2019</div></div>
+      <ul><li>Fiori and ABAP development on an S/4HANA SAP Retail implementation.</li></ul>
+    </div>
+
+    <div class="role">
+      <div class="role-head"><div class="role-title"><span class="role-org">Standard Bank</span> · Senior SAP Fiori/ABAP Consultant</div><div class="dates">Aug 2018 – Nov 2018</div></div>
+      <ul><li>Built the Fiori and ABAP layers of an SAP GRC prototype.</li></ul>
+    </div>
+
+    <div class="role">
+      <div class="role-head"><div class="role-title"><span class="role-org">Britehouse</span> · Independent Mobility Contractor</div><div class="dates">Dec 2016 – Feb 2017</div></div>
+      <ul><li>Built a retail rewards mobile solution on Britehouse's Atajo mobile platform.</li></ul>
+    </div>
+  </main>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page">
+  <aside>
+    <h2 style="margin-top:0">Education &amp; certification</h2>
+    <ul class="edu">
+      <li><div class="what">Oracle Certified Java Professional 6</div><div class="where">Oracle University · 2013</div></li>
+      <li><div class="what">SAQA Level 5 – Systems Support Engineering</div><div class="where">Bytes People Solutions · 2012</div></li>
+      <li><div class="what">B-Tech Information Systems Engineering</div><div class="where">CTI Education Group · 2011</div></li>
+      <li><div class="what">ICDL Certificate</div><div class="where">Mangosuthu University of Technology · 2012</div></li>
+    </ul>
+
+    <h2>Neptune &amp; mobility</h2>
+    <ul class="plain">
+      <li>Authored the Neptune Software cookbooks for ABAP developers for each product release (Application Designer, Monitor, Management).</li>
+      <li>Represented Neptune as SAP reseller in South Africa.</li>
+      <li>Built barcode-scanner and offline mobile apps on Motorola and Windows Phone devices, managed with SOTI MDM.</li>
+    </ul>
+
+    <h2>Leadership</h2>
+    <ul class="plain">
+      <li>Neptune team lead and mentor to SAP ABAP interns – Vistex Africa</li>
+      <li>Developer team lead / Scrum Master – CapaCiTi 1000</li>
+      <li>Neptune trainer for Pick n Pay, AVI and Barnstone</li>
+    </ul>
+    <h2>Industries</h2>
+    <div class="chips">
+      <span class="chip">Automotive</span><span class="chip">Retail</span><span class="chip">Pharmacy</span>
+      <span class="chip">Banking</span><span class="chip">Public sector</span><span class="chip">Manufacturing</span>
+      <span class="chip">Heavy equipment</span><span class="chip">Packaging</span>
+    </div>
+  </aside>
+
+  <main>
+    <h2 style="margin-top:0">Experience (continued)</h2>
+
+    <div class="role">
+      <div class="role-head"><div class="role-title">SAP ABAP &amp; UI5 Developer · <span class="role-org">Vistex Africa</span></div><div class="dates">Jan 2014 – Nov 2016</div></div>
+      <ul>
+        <li>Led the Neptune (SAPUI5/Fiori) developer team, facilitated client workshops and mentored junior developers.</li>
+        <li>Built OData/Gateway REST services, object-oriented ABAP and third-party integrations.</li>
+        <li>Developed Web Dynpro &amp; FPM applications, SAP Workflow and Adobe Interactive Forms.</li>
+      </ul>
+      <div class="stack" style="margin-top:5px"><b>Client projects</b></div>
+      <ul>
+        <li><b>AVI Financial Services</b> (2014 – 2016): full-SDLC Salesforce automation project on SAPUI5/Fiori, Gateway and ABAP; mobile service-delivery app with signature pad and camera; expense-claims app.</li>
+        <li><b>Polyoak Packaging</b> (2014 – 2016): Fiori material-pricing and stock-count mobile apps on Neptune.</li>
+        <li><b>City of Cape Town</b> (2014 – 2016): SAP–MS Word integration and mobility for the Development Application Management System, Land Use Management, Municipal By-Law and E-signage.</li>
+        <li><b>Pick n Pay</b> (2014): SAPUI5 barcode-scanner app for MM/Retail on Motorola 3190 devices; Windows Phone 8 proof of concept.</li>
+      </ul>
+    </div>
+
+    <div class="role">
+      <div class="role-head"><div class="role-title">Java Developer · <span class="role-org">CapaCiTi 1000</span></div><div class="dates">Aug 2013 – Jan 2014</div></div>
+      <ul>
+        <li>Team lead and Scrum Master on a Java ERP point-of-sale subsystem and a video-rental system.</li>
+        <li>Wrote tested, high-availability code across the full development lifecycle.</li>
+      </ul>
+    </div>
+
+    <div class="role">
+      <div class="role-head"><div class="role-title">Earlier IT roles</div><div class="dates">Oct 2011 – Aug 2013</div></div>
+      <ul>
+        <li><b>Licence Pro (P.Cubed)</b> – IT Support &amp; Server Administrator: Windows Server 2008, Linux and Active Directory.</li>
+        <li><b>Mangosuthu University of Technology</b> – Desktop Support Technician: hardware, OS and SQL Server/Oracle support.</li>
+        <li><b>Bytes People Solutions</b> – Systems Support Intern.</li>
+      </ul>
+    </div>
+  </main>
+</section>
+
+</body>
+</html>
