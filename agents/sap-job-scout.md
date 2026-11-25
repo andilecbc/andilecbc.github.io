@@ -36,7 +36,7 @@ Keep only roles that are:
 Queries (rotate): `SAP ABAP contract South Africa`, `SAP Fiori developer contract Johannesburg / Cape Town / Durban`,
 `SAP ABAP remote Africa`, `SAP S/4HANA developer Kenya / Nigeria / Egypt / Morocco / Botswana / Namibia / Mauritius`.
 Sources: PNet, CareerJunction, LinkedIn (ZA), Indeed ZA, Careers24, Network Recruitment, Hire Resolve, E-Merge IT, Glassdoor, career pages.
-Keep remote roles, or hybrid / on-site in South Africa (city and on-site days flagged). Outside South Africa: flag work permit and travel.
+Keep **fully remote roles only** (rare travel acceptable if stated) — skip hybrid and on-site roles, including in South Africa.
 
 Rank by fit (skills, rate, contract length, timezone). Max 5 Europe/UK and 3 Africa roles per digest.
 
