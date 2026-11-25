@@ -1,6 +1,6 @@
 # SAP Job Scout (life-ops agent)
 
-Finds remote SAP ABAP / Fiori roles based in Europe or the UK, and prepares applications for Andile to approve.
+Finds SAP ABAP / Fiori roles in two markets — (A) remote roles based in Europe or the UK, (B) roles in Africa — and prepares applications for Andile to approve.
 **It never applies without an explicit approval from Andile.**
 
 - Schedule: weekdays 06:48 Africa/Johannesburg (scheduled task "Life-ops: SAP Job Scout")
@@ -19,6 +19,7 @@ Search Gmail for Andile's replies to `[SAP Job Scout]` emails since the last run
 - No reply → leave pending; remind once in the next digest, drop after 7 days.
 
 ### 2. Search for new roles
+#### (A) Europe / UK (remote)
 Queries (rotate): `remote SAP ABAP developer`, `remote SAP Fiori developer`, `SAP ABAP RAP BTP remote contract`,
 `SAP UI5 freelance remote`, `SAP EWM ABAP remote` — Europe / UK / EMEA, posted in the last 7 days.
 Sources: LinkedIn Jobs, Indeed (UK/DE/NL/IE), Glassdoor, freelancermap.de, GULP, Malt, Hays, Randstad, Jobserve, Reed,
@@ -31,9 +32,18 @@ Keep only roles that are:
 - Pass the rate rule below
 - Not already reported (check previous `[SAP Job Scout]` emails for the same URL/company+title)
 
-Rank by fit (skills, rate, contract length, timezone). Max 5 roles per digest.
+#### (B) Africa
+Queries (rotate): `SAP ABAP contract South Africa`, `SAP Fiori developer contract Johannesburg / Cape Town / Durban`,
+`SAP ABAP remote Africa`, `SAP S/4HANA developer Kenya / Nigeria / Egypt / Morocco / Botswana / Namibia / Mauritius`.
+Sources: PNet, CareerJunction, LinkedIn (ZA), Indeed ZA, Careers24, Network Recruitment, Hire Resolve, E-Merge IT, Glassdoor, career pages.
+Keep remote roles, or hybrid / on-site in South Africa (city and on-site days flagged). Outside South Africa: flag work permit and travel.
+
+Rank by fit (skills, rate, contract length, timezone). Max 5 Europe/UK and 3 Africa roles per digest.
 
 #### Rate rule
+**Africa:** minimum **ZAR 1,000/h**, no exception band. Monthly contract rate / 160 = hourly; other African currencies converted to ZAR.
+
+**Europe / UK:**
 - Target: **EUR 70/h or more**. Below that, skip.
 - Exception: **EUR 60–69.99/h** only if the role is really attractive (strong RAP/BTP/Fiori/EWM fit, 6+ months,
   fully remote and flexible, strong end client or likely extension). Label it `BELOW TARGET RATE (EUR xx/h)` with one line on why.
@@ -49,7 +59,7 @@ For each role:
 - Never invent experience, certifications, rates or work-permit status.
 
 ### 4. Send the review digest
-Email andilecbc@gmail.com, subject `[SAP Job Scout] <n> new remote SAP roles – <date>`. Per role:
+Email andilecbc@gmail.com, subject `[SAP Job Scout] <n> new SAP roles – <date>`, with sections "Europe / UK (remote)" and "Africa". Per role:
 - ID (e.g. `J-20261125-1`), title, company / agency, country, remote policy, contract type & length, rate/salary if listed,
   posted date, link, why it fits, risks (visa, on-site days, language), how to apply (email / portal).
 - The full draft cover note.
