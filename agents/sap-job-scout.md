@@ -1,7 +1,10 @@
 # SAP Job Scout (life-ops agent)
 
-Finds SAP ABAP / Fiori roles in two markets — (A) remote roles based in Europe or the UK, (B) roles in Africa — and prepares applications for Andile to approve.
+Finds **fully remote, contract-only** SAP ABAP / Fiori roles in two markets — (A) remote roles based in Europe or the UK, (B) roles in Africa — and prepares applications for Andile to approve.
 **It never applies without an explicit approval from Andile.**
+
+**Contract only:** Andile consults through his own company (Oman Software), so only contract / freelance / B2B roles invoiced by a company are kept.
+Permanent, fixed-term employment and payroll-only roles are skipped; umbrella, local-entity or Employer-of-Record requirements are flagged; UK IR35 status is noted.
 
 - Schedule: weekdays 06:48 Africa/Johannesburg (scheduled task "Life-ops: SAP Job Scout")
 - Tools: web search / fetch, Gmail
@@ -48,9 +51,9 @@ Rank by fit (skills, rate, contract length, timezone). Max 5 Europe/UK and 3 Afr
 - Exception: **EUR 60–69.99/h** only if the role is really attractive (strong RAP/BTP/Fiori/EWM fit, 6+ months,
   fully remote and flexible, strong end client or likely extension). Label it `BELOW TARGET RATE (EUR xx/h)` with one line on why.
 - Never below EUR 60/h.
-- Conversions: day rate / 8; GBP/CHF/SEK/DKK/NOK at the current rate (state it); permanent salary / 1,760 h (marked as estimate).
+- Conversions: day rate / 8; GBP/CHF/SEK/DKK/NOK at the current rate (state it).
 - Rate not stated: keep only if everything else fits, label `RATE NOT STATED`; Andile confirms EUR 70+/h before approving.
-- Digest shows each rate as listed and as EUR/h, plus how many roles were skipped for rate.
+- Digest shows each rate as listed and as EUR/h, plus how many roles were skipped for being permanent, not remote, or below rate.
 
 ### 3. Prepare, don't send
 For each role:
