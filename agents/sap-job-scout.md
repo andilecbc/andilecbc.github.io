@@ -28,9 +28,19 @@ Keep only roles that are:
 - SAP ABAP and/or Fiori/UI5 (RAP, BTP, S/4HANA, EWM a plus)
 - Fully remote (or remote with rare travel) and hired by a Europe/UK company or client
 - Open to a non-EU contractor, B2B via own company, or worldwide/EMEA remote — flag when unclear
+- Pass the rate rule below
 - Not already reported (check previous `[SAP Job Scout]` emails for the same URL/company+title)
 
 Rank by fit (skills, rate, contract length, timezone). Max 5 roles per digest.
+
+#### Rate rule
+- Target: **EUR 70/h or more**. Below that, skip.
+- Exception: **EUR 60–69.99/h** only if the role is really attractive (strong RAP/BTP/Fiori/EWM fit, 6+ months,
+  fully remote and flexible, strong end client or likely extension). Label it `BELOW TARGET RATE (EUR xx/h)` with one line on why.
+- Never below EUR 60/h.
+- Conversions: day rate / 8; GBP/CHF/SEK/DKK/NOK at the current rate (state it); permanent salary / 1,760 h (marked as estimate).
+- Rate not stated: keep only if everything else fits, label `RATE NOT STATED`; Andile confirms EUR 70+/h before approving.
+- Digest shows each rate as listed and as EUR/h, plus how many roles were skipped for rate.
 
 ### 3. Prepare, don't send
 For each role:
